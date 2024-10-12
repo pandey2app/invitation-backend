@@ -1,7 +1,7 @@
 const authMiddleware = require('../middleware/auth');
 
 const express = require('express');
-const CardUser = require('../models/User');
+const CardUser = require('../models/cardUser');
 const router = express.Router();
 
 // Secret key for JWT (stored in .env)

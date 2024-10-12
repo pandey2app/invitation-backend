@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Card = require('../models/Card');
-const CardUser = require('../models/User');
+const CardUser = require('../models/cardUser');
 const auth = require('../middleware/auth'); // Import authentication middleware
 
 // POST /api/cards - Create a new card (requires authentication)
