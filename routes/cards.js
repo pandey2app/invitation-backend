@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const Card = require('../models/Card');
-const CardUser = require('../models/cardUser');
-const auth = require('../middleware/auth'); // Import authentication middleware
+const Card = require('../models/card.js');
+const CardUser = require('../models/cardUser.js');
+const auth = require('../middleware/auth.js'); // Import authentication middleware
 
 // POST /api/cards - Create a new card (requires authentication)
 router.post('/create', auth, async (req, res) => {
